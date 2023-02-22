@@ -26,7 +26,19 @@ public class Prueba {
         pruebHash2.add(b2);
         pruebHash2.add(a2);
         pruebHash2.add(c2);
-   //     System.out.println(pruebHash2);
+
+        Set <String>  pruebHash45 = new TreeSet<>();
+        pruebHash45.add("3");
+        pruebHash45.add("1");
+        pruebHash45.add("2");
+        System.out.println("la 45 " + pruebHash45);
+
+
+
+
+
+
+        //     System.out.println(pruebHash2);
 //LinkedHashSet ordena por insercion
         Set <Empleado>  pruebHash3 = new LinkedHashSet<>();
 

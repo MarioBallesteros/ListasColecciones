@@ -10,7 +10,8 @@ public class Prueba {
         Persona a = new Persona("a",20);
         Persona b = new Persona("b",16);
         Persona c = new Persona("c",54);
-        //no entiendo el puto addAll
+        //no entiendo el
+        // addAll
         listEmple.add(b);
         listEmple.add(a);
         listEmple.add(c);

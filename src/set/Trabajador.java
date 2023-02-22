@@ -2,9 +2,9 @@ package set;
 
 import java.util.Objects;
 
-public class Trabajador implements  Comparable<Trabajador>{
+public class Trabajador implements Comparable<Trabajador> {
 
-    private String name ;
+    private String name;
     private int edad;
 
     public Trabajador(String name, int edad) {
@@ -43,6 +43,25 @@ public class Trabajador implements  Comparable<Trabajador>{
 
     @Override
     public int compareTo(Trabajador o) {
-        return name.compareTo(o.getName());
+        if (edad < o.getEdad()) {
+            return -1;
+        } else if (edad == o.getEdad()) {
+            return 0;
+        } else {
+            return 1;
+        }
+
+        // return name.compareTo(o.getName());
     }
+
+//    @Override
+//    public int compareTo(Trabajador o) {
+//        return Integer.compare(edad, o.getEdad());
+//
+//    }
+
+//    @Override
+//    public int compareTo(Trabajador o) {
+//        return name.compareTo(o.getName());
+//    }
 }

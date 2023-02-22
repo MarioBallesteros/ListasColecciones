@@ -4,6 +4,7 @@ import list.Empleado;
 import list.Persona;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -33,7 +34,19 @@ public class Prueba {
         mapTree.put(c3,c);
         System.out.println(mapTree);
 
+        Map <String, Integer> mapTree2 = new TreeMap<>();
+        mapTree2.put("b",2);
+        mapTree2.put("a",1);
+        mapTree2.put("c",3);
+        System.out.println("el 2 "+mapTree2);
 
+
+
+        Map <Trabajador, Empleado> mapLink = new LinkedHashMap<>();
+        mapLink.put(a3,a);
+        mapLink.put(b3,b);
+        mapLink.put(c3,c);
+        System.out.println(mapLink);
 
     }
 }
