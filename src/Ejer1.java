@@ -33,7 +33,7 @@ public class Ejer1 {
         while (iterator.hasNext()){
         Integer element = iterator.next();
         if (element>50){
-            System.out.println(mapa2.values());
+            System.out.println(element);
         }
 
         }
