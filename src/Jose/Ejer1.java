@@ -1,3 +1,5 @@
+package Jose;
+
 import java.util.*;
 
 public class Ejer1 {

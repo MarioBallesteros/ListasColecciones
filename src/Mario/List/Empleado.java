@@ -1,11 +1,11 @@
-package map;
+package Mario.List;
 
-public class Persona {
+public class Empleado {
 
     private String name ;
     private int edad;
 
-    public Persona(String name, int edad) {
+    public Empleado(String name, int edad) {
         this.name = name;
         this.edad = edad;
     }

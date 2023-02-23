@@ -1,4 +1,6 @@
-package list;
+package Jose.set;
+
+import java.util.Objects;
 
 public class Persona {
 
@@ -18,6 +20,18 @@ public class Persona {
         return edad;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Persona persona = (Persona) o;
+        return edad == persona.edad && Objects.equals(name, persona.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, edad);
+    }
 
     @Override
     public String toString() {

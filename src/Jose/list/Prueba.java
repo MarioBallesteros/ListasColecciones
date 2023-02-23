@@ -1,4 +1,4 @@
-package list;
+package Jose.list;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

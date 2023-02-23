@@ -1,4 +1,6 @@
-package map;
+package Jose.set;
+
+import java.util.Objects;
 
 public class Empleado {
 
@@ -18,10 +20,22 @@ public class Empleado {
         return edad;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Empleado persona = (Empleado) o;
+        return edad == persona.edad && Objects.equals(name, persona.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, edad);
+    }
 
     @Override
     public String toString() {
-        return "Empleado{" +
+        return "Persona{" +
                 "name='" + name + '\'' +
                 ", edad=" + edad +
                 '}';

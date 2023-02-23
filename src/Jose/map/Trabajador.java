@@ -1,4 +1,4 @@
-package map;
+package Jose.map;
 
 import java.util.Objects;
 

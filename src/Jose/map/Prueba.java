@@ -1,7 +1,7 @@
-package map;
+package Jose.map;
 
-import list.Empleado;
-import list.Persona;
+import Jose.list.Empleado;
+import Jose.list.Persona;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
